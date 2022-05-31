@@ -1,17 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import './styles.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+  <>
+    <div className='cursor' id='cursor'></div>
+    <div className='view-box' id='view-box'>
+      <div className='x-cross' id='x-cross'></div>
+      <div className='y-cross' id='y-cross'></div>
+    </div>
+    <div className='target' id='target'></div>
+    <div className='prev-time' id='prev-time'>Previous time: ------ 0sec</div>
+    <div className='keystrokes' id='keystrokes'>Keystrokes used: --- 4key</div>
+  </>
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
